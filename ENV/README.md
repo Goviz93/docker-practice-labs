@@ -42,7 +42,7 @@ docker_env/
 ## 💡 Useful Commands
 
 ```bash
-docker build -t apache_with_code:v3 docker_env/
+docker build -t apache_with_code:v3 .
 docker run -d --name apache -p 9090:80 apache_with_code:v3
 docker stop apache
 docker start apache
