@@ -43,7 +43,7 @@ docker_args/
 ## 💡 Useful Commands
 
 ```bash
-docker build -t apache_with_code:v6 docker_args/ --build-arg user=gonzalo --build-arg library=apache2
+docker build -t apache_with_code:v6 . --build-arg user=User_Name --build-arg library=apache2
 docker run -d --name apache -p 9090:80 apache_with_code:v6
 docker stop apache
 docker start apache
