@@ -20,23 +20,27 @@ Learn how to use the ADD command in Dockerfiles to download external resources a
 
 ## 📂 Files & Structure
 
-\`\`\`bash
+```bash
 ├── Dockerfile
-\`\`\`
+```
 
 ---
 
 ## 📝 Steps Performed
 
-1. Created a Dockerfile based on the Ubuntu image., 2. Installed Apache and unzip tools., 3. Used the ADD command to download a ZIP archive from GitHub directly into the container.,4. Unzipped the archive into the Apache root directory., 5. Built the image and ran the container mapping port 9090 to 80.
+1. Created a Dockerfile based on the Ubuntu image. 
+2. Installed Apache and unzip tools.
+3. Used the ADD command to download a ZIP archive from GitHub directly into the container.
+4. Unzipped the archive into the Apache root directory.
+5. Built the image and ran the container mapping port 9090 to 80.
 
 ---
 
 ## 💡 Useful Commands
 
-\`\`\`bash
+```bash
 docker build -t apache_with_code:v2 ., docker run -d --name apache -p 9090:80 apache_with_code:v2, docker stop apache, docker start apache
-\`\`\`
+```
 
 ---
 
