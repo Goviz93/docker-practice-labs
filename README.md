@@ -1,5 +1,8 @@
 # 🧪 Docker Practice Labs
 
+![Docker](https://img.shields.io/badge/docker-ready-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 > Hands-on Docker practice labs with step-by-step documentation, real-world examples.
 
 ---
