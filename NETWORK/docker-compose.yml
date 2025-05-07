@@ -1,0 +1,20 @@
+services:
+
+  ubuntu_10:
+    container_name: ubuntu_10
+    image: ubuntu
+    command: tail -f /dev/null
+    networks:
+      - test_net
+
+  ubuntu_11:
+    container_name: ubuntu_11
+    image: ubuntu
+    command: tail -f /dev/null
+    networks:
+      - test_net
+
+networks:
+  test_net:
+    driver: bridge
+
